@@ -30,9 +30,6 @@ conda activate molgraph
 # Running GPS with RWSE and tuned hyperparameters for ZINC.
 python main.py --cfg configs/GPS/zinc-GPS+RWSE.yaml  wandb.use False
 
-# Running config with tuned SAN hyperparams for ZINC.
-python main.py --cfg configs/SAN/zinc-SAN.yaml  wandb.use False
-
 # Running a debug/dev config for ZINC.
 python main.py --cfg tests/configs/graph/zinc.yaml  wandb.use False
 ```
