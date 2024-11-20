@@ -14,7 +14,6 @@ pip install pyg-lib -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
 conda install openbabel fsspec rdkit -c conda-forge
 
 pip install pytorch-lightning yacs torchmetrics
-pip install performer-pytorch
 pip install tensorboardX
 pip install ogb
 pip install wandb
@@ -27,7 +26,7 @@ conda clean --all
 ```bash
 conda activate molgraph
 
-# Running GPS with RWSE and tuned hyperparameters for ZINC.
+# Running with RWSE and tuned hyperparameters for ZINC.
 python main.py --cfg configs/GPS/zinc-GPS+RWSE.yaml  wandb.use False
 
 # Running a debug/dev config for ZINC.
