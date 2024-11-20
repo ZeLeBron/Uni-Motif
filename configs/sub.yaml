@@ -1,0 +1,11 @@
+name_tag: ego-RWSE
+sub:
+  type: ego
+  ego_type: hop
+  num_hops: 3
+  embedding_type: rand_walk
+  egograph_pos_enc_dim: 16
+  cut_pos_enc_dim: 16
+  cut_times: 4
+  batchnorm: False
+  pooling: mean
